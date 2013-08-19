@@ -1,0 +1,6 @@
+<h2>Your Cart</h2>
+<ul>
+	<% @shop.line_items.each do |item| %>
+	<li><%= item.quantity %> &times; <%= item.product.title %></li>
+	<% end %>
+</ul>
